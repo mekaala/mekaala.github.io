@@ -1,3 +1,35 @@
+body {
+    background-color: linen;
+    display: grid;
+    grid-template-rows: 200px 1fr 80px;
+    grid-template-columns: 100px 1fr 100px;
+    font-family: 'Raleway';
+    text-align: left;
+}
+header {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    text-align: center;
+  }
+h2 a {
+    text-decoration: none;
+    color: black;
+    font-weight: light;
+}
+main {
+    width: 800px;
+    grid-row: 2;
+    grid-column: 2;
+}
+main h2 {
+    margin: 40px;
+}
+footer {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    font-size: 12pt;
+    text-align: right;
+  }
 img {
     width: 800px;
 }

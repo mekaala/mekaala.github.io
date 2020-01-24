@@ -1,0 +1,1 @@
+For my portfolio, I decided to take the opportunity to explore my photography.

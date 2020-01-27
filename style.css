@@ -120,6 +120,7 @@ h4 {
     .left {
         grid-row: 4;
         grid-column: 1;
+        width: 600px;
         }
     .right {
         grid-row: 3;

@@ -1,11 +1,20 @@
 body {
-    background-color: linen;
-    display: grid;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;    
+    color: white;    display: grid;
     grid-template-rows: 100px 1fr 50px;
-    grid-template-columns: 250px 1fr 250px;
+    grid-template-columns: 80px 1fr 250px;
     font-family: 'Raleway';
     text-align: left;
 }
+
+@keyframes gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
 
 header {
     grid-row: 1;
@@ -17,17 +26,21 @@ header {
     nav {
         float: right;
         line-height: 50%;
-        text-align: right;
-        
+        text-align: right;        
     }
     a:hover {
-        color: #2F8CAB;
-      }
-    h2 a {
-        text-decoration: none;
         color: black;
+        transition-duration: 0.5s;
+      }
+    h2 {        
         font-weight: lighter;
+        font-size: 20px;
     }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
 
 main {
     grid-row: 2;
@@ -44,6 +57,7 @@ main h2 {
         width: 600px;
         display: block;
         margin: 0 auto;
+        border-radius: 24px;
     }
 
 .left {
@@ -73,17 +87,65 @@ footer {
     font-size: 12pt;
     text-align: right;
   }
+  footer nav {
+      line-height: normal;
+  }
   footer p {
       text-decoration: none;
-      float: left;
+      float: right;
   }
-  footer a {
-    text-decoration: none;
-    color: black;
-  }
+  
   #foot {
-    float: right;  
+    float: left;  
   }
+  #aboutMe {
+      cursor: pointer;
+  }
+  .about {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+.about-shape {
+    position: relative;
+    margin: 5% auto;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    width: 75%;
+    border-radius: 24px;
+}
+.about-content {
+    position: relative; 
+    color: white;
+    padding: 20px; 
+    margin: auto; 
+    text-align: center;
+}
+.close {
+    float: right; 
+    color: lightgray; 
+    font-size: 32px;  
+    font-weight: bold;
+    margin: -18px -10px;
+
+  }
+  .close:hover {
+    color: darkgray;
+    cursor: pointer;
+  }
+.about img {
+    width: 40%;
+    margin: 10px;
+    border-radius: 48px;
+}
 .left img, .right img {
     width: 150px;
     display: block;
@@ -94,6 +156,10 @@ footer {
 }
 h4 {
     text-align: center;
+}
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
 }
 
     @media only screen and (max-width: 1200px) {

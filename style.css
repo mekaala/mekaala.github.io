@@ -89,6 +89,8 @@ footer {
   }
   footer nav {
       line-height: normal;
+      margin-top: 17px;
+
   }
   footer p {
       text-decoration: none;
@@ -162,7 +164,7 @@ h4 {
     to {opacity: 1}
 }
 
-    @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 760px) {
  
         body {
             display: grid;
@@ -209,4 +211,47 @@ h4 {
             text-align: right;
             margin-top: 20px;
               }
+              footer nav {
+                  float: right;
+              }
         }
+
+.nMode {
+    float: left;
+    width: 76px;
+    height: 50px;
+    background: linear-gradient(-45deg, black, rgb(39, 0, 39), rgb(0, 0, 126));
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;       
+    color: white;
+    border-radius: 12px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    margin-right: 10px;
+}
+.dMode {
+    float: left;
+    width: 76px;
+    height: 50px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;       
+    color: white;
+    border-radius: 12px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    transition-duration: 1s;
+    margin-right: 10px;
+}
+.night-mode, .night-mode .about-shape {
+    background: linear-gradient(-45deg, black, rgb(39, 0, 39), rgb(0, 0, 126));
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;    
+    color: white;
+}
+.night-mode button {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}

@@ -53,6 +53,17 @@ main {
 main h2 {
     text-align: center;
 }
+main p {
+    margin-bottom: 1px;
+}
+main h4 {
+    text-align: right;
+    margin: 1px 10px;
+}
+h4 a {
+    text-decoration: none;
+    color: white;
+}
     main img {
         width: 600px;
         display: block;

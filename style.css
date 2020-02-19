@@ -241,6 +241,9 @@ h4 {
     font-weight: lighter;
     margin-right: 10px;
 }
+.night-mode a:hover {
+    color: green;
+}
 .dMode {
     float: left;
     width: 76px;

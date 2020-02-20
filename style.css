@@ -144,7 +144,7 @@ footer {
     .about p {
         float: right;
         width: 55%;
-        margin: 80px 2px;
+        margin: 97px 2px;
     }
 a {
     text-decoration: none;
@@ -197,7 +197,6 @@ h4 {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-weight: lighter;
-    margin-right: 10px;
 }
 
 .dMode {
@@ -213,7 +212,6 @@ h4 {
     text-align: center;
     font-weight: lighter;
     transition-duration: 1s;
-    margin-right: 10px;
 }
 .night-mode, .night-mode button {
     background: linear-gradient(-45deg, black, rgb(39, 0, 39), rgb(0, 0, 126));

@@ -2,24 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
     <title>Mekaal Ahmad</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>Mekaal Ahmad</h1>
-    <nav>
-        <h2>
-            <a href="https://www.linkedin.com/in/mekaal-ahmad-b7339191/" target="_blank">Linkedin</a> |
-            <a href="https://github.com/mekaala" target="_blank">GitHub</a> |
-            <a href="https://www.instagram.com/mekastro/?hl=en" target="_blank">Instagram</a>
-        </h2>
+<header id="top">
+    <nav id="navbar">
+        <button class = "nMode">Night Mode</button>
+        <a href="https://www.instagram.com/mekastro/?hl=en" target="_blank"><button>Instagram</button></a>
+        <a href="https://github.com/mekaala" target="_blank"><button>GitHub</button></a>
+        <a href="https://www.linkedin.com/in/mekaal-ahmad-b7339191/" target="_blank"><button>Linkedin</button></a>
+        <a href="https://docs.google.com/document/d/1VYxCil95JyKBRf6qh8FV9J85HWnJ5HLNnXqNubTs-hM/edit?usp=sharing" target = "_blank"><button>Resume</button></a>
+        <nav id="sections">
+            <a href="#bottom"><button>About</button></a>
+            <a href="#right"><button>Photography</button></a>
+            <a href="#left"><button>Skills</button></a>
+            <a href="#projects"><button>Projects</button></a>
+            <a href="#top"><button>Home</button></a>
+        </nav>
     </nav>
+    <div>
+        <h1>Mekaal Ahmad</h1>
+        <h3>Full Stack Software Engineer</h3>
+        <p>
+            Science built my drive to experiment with and construct complex objectives. Photography nurtured my desire to create engaging and resonating designs. Both move me to develop complex and responsive software.
+        </p>
+    </div>
 </header>
-<main>
+<main id="projects">
 <h2>Projects</h2>
-<hr>
     <section>
         <h3>
             <a href = "https://nintendo-jeopardy.netlify.com/" target="_blank">Dynamic Jeopardy</a>
@@ -33,13 +46,8 @@
 
     </section>
 </main>
-<aside class = "left">
-    <h3>
-        <a href = "https://docs.google.com/document/d/1VYxCil95JyKBRf6qh8FV9J85HWnJ5HLNnXqNubTs-hM/edit?usp=sharing" target = "_blank">Resume</a>
-    </h3>
-    <hr>
+<aside class = "left" id="left">
     <h3>Skills</h3>
-    <hr>
     <p>HTML</p>
     <p>CSS</p>
     <p>JavaScript</p>
@@ -49,54 +57,34 @@
     <p>SQL</p>
     <p>Python</p>
 </aside>
-<aside class="right">
-    <h2>Photography</h2>
-    <hr>
-    <section>
-        <h3>Sunset in Morocco</h3>
+<aside class="right" id="right">
+    <h2>
+        <a href="#" target="_blank">Photography</a>
+    </h2>
+    <div class="photo">
         <img src='photos/Morocco_Sunset.jpg' alt="Morocco Sunset">
-            <p>Gazing upon the sea of dunes cascading around me, I wonder how far can I walk upon this sand. 
-        Will I overcome the harsh sun and reach my camp? Will the rays sink me into the golden abyss? 
-        No matter the result: the only answer will come with one step forward.</p>
-    </section>
-    <hr>
-    <section>
-        <h3>Thin Flames</h3>
-        <img src='photos/Steel_wool.jpg' alt="Steel Wool">
-            <p>Sparks dance around my body, crashing and scorching the wooden earth. Water surrounds me to save me from an infernal accident, but with proper care, I thrive.</p>
-    </section>
-</aside>
-<footer>
-    <hr>
-    <button class = "nMode">Night Mode</button>
-    <p id="foot">Mekaal E. Ahmad 2020</p>
-<nav>
-    <a id="aboutMe">About</a> |
-    <div id="modalAbout" class="about">
-        <div class = "about-shape">
-            <div class="about-content">
-                <span class="close">&times;</span>
-                <img src="photos/Mekaal_E_Ahmad.jpg" alt = "Mekaal Ahmad profile">
-                <p>
-                    I am currently attending General Assembly as a student of the Software Engineering Immersive program.
-                    With this program, I hope to develop an advanced set of skills to benefit others.
-                    I hope to master website creation, and craft many successful projects.
-                    <br><br>
-                    Outside of General Assembly, I am a photographer who focuses on capturing the night sky, landscapes, and nature. I hope that with this portfolio, I can not only display my Software Engineering projects, but also market my photography to a wide audience.
-                    <br><br>
-                    <a href = "https://docs.google.com/document/d/1VYxCil95JyKBRf6qh8FV9J85HWnJ5HLNnXqNubTs-hM/edit?usp=sharing" target = "_blank">Resume</a>
-                </p>
-                    <h4>
-                        Graphic Content - Credits<br>
-                        Background - Manuel Pinto - May 13, 2016 - <a href = "https://codepen.io/P1N2O/pen/pyBNzX" target = "_blank">Codepen</a>
-                    </h4>
-            </div>
-        </div>
     </div>
-<a href="https://www.instagram.com/mekastro/?hl=en" target="_blank">Instagram</a> | 
-<a href="https://www.linkedin.com/in/mekaal-ahmad-b7339191/" target="_blank">Linkedin</a> | 
-<a href="https://github.com/mekaala" target="_blank">GitHub</a>
-</nav>
+    <div class="photo">
+        <img src='photos/Steel_wool.jpg' alt="Steel Wool">
+    </div>
+</aside>
+<footer id="bottom">
+    <h1>About Me</h1>
+    <div class="about">
+        <img src="photos/Mekaal_E_Ahmad.jpg" alt = "Mekaal Ahmad profile"/>
+        <p class="about">
+            I am currently attending General Assembly as a student of the Software Engineering Immersive program.
+            With this program, I hope to develop an advanced set of skills to benefit others.
+            I hope to master website creation, and craft many successful projects.
+            <br>
+            Outside of General Assembly, I am a photographer who focuses on capturing the night sky, landscapes, and nature. I hope that with this portfolio, I can not only display my Software Engineering projects, but also market my photography to a wide audience.
+            <br><br>
+            <a href = "https://docs.google.com/document/d/1VYxCil95JyKBRf6qh8FV9J85HWnJ5HLNnXqNubTs-hM/edit?usp=sharing" target = "_blank">Resume</a><br><br>
+            Graphic Content - Credits<br>
+            Background - Manuel Pinto - May 13, 2016 - <a href = "https://codepen.io/P1N2O/pen/pyBNzX" target = "_blank">Codepen</a>
+        </p>
+    </div>
+    <p id="foot">Mekaal E. Ahmad 2020</p>
 </footer>
 <script src="script.js"></script>
 </body>

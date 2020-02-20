@@ -4,7 +4,7 @@ body {
     animation: gradient 15s ease infinite;    
     color: white;
     display: grid;
-    grid-template-rows: 760px 760px 760px 760px 500px;
+    grid-template-rows: 60px 760px 760px 760px 760px 600px;
     font-family: 'Raleway';
     text-align: center;
     font-weight: lighter;
@@ -16,26 +16,47 @@ body {
     100% {background-position: 0% 50%;}
 }
 
-
+button {
+    margin: 5px;
+    cursor: pointer;
+}
+nav {
+    overflow: hidden;
+    z-index: 1;
+    background: linear-gradient(-90deg, rgb(99, 223, 99), rgb(223, 99, 99), rgb(99, 99, 223));
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    border-radius: 12px;
+    box-shadow: black;
+    top: 0;
+}
+.sticky {
+    position: fixed;
+    width: 98.5%;
+    top: 0;
+  }
+  .content {
+    padding: 16px;
+  }
+  .sticky + .content {
+      padding-top: 60px;
+    }
+  
+nav button:hover {
+    color: green;
+    transition-duration: 0.5s;
+  }
+  #sections {
+      float: left;
+      background: none;
+    }
 header {
-    grid-row: 1;
+    grid-row: 2;
   }
   div {
-    position: static;
-    margin: 350px 100px;
+    position: absolute;
+    margin: 280px 100px;
   }
-     button {
-        margin: 5px;
-        cursor: pointer;
-    }
-    nav {
-        overflow: hidden;
-        background: linear-gradient(-90deg, rgb(99, 223, 99), rgb(223, 99, 99), rgb(99, 99, 223));
-        background-size: 400% 400%;
-        animation: gradient 30s ease infinite;
-        border-radius: 12px;
-        box-shadow: black;
-    }
     .dayMode {
         overflow: hidden;
         background: linear-gradient(-90deg, rgb(0, 128, 0), rgb(128, 0, 0), rgb(0, 0, 128));
@@ -60,28 +81,9 @@ header {
         font-weight: lighter;
         float: right;   
     }
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 98.5%;
-      }
-      .content {
-        padding: 16px;
-      }
-      .sticky + .content {
-          padding-top: 60px;
-        }
-      
-    nav button:hover {
-        color: green;
-        transition-duration: 0.5s;
-      }
-      #sections {
-          float: left;
-          background: none;
-        }
+
 main {
-    grid-row: 2;
+    grid-row: 3;
     padding: 0 1em;
     display: block;
     margin: 0 auto;
@@ -107,11 +109,11 @@ h4 a {
     }
 
 .left {
-    grid-row: 3;
+    grid-row: 4;
 }
 
 .right {
-    grid-row: 4;
+    grid-row: 5;
 }
 
     .right p a {
@@ -122,22 +124,24 @@ h4 a {
     }
 
 footer {
-    grid-row: 5;
-    font-size: 12pt;
+    grid-row: 6;
     bottom: 0;
+    text-align: center;
   }
   
 .about {
     display: block;
     position: static;
+    z-index: 0;
     transform: translate(0%, 0%);
-
+    margin: 0;
+    text-align: center;
 }
     .about img {
         width: 40%;
         margin: 10px;
         border-radius: 48px;
-        float: left;
+        float: none;
     }
     .about p {
         float: right;
@@ -230,14 +234,21 @@ h4 {
 @media only screen and (max-width: 760px) {
     body {
         display: grid;
-        grid-template-rows: 300px 1fr 1fr 1fr 500px;
+        grid-template-rows: 50px 300px 1fr 1fr 1fr 500px;
         font-size: small;
         }
         header {
-            grid-row: 1;
+            grid-row: 2;
+            }
+            .dMode {
+                width: 50px;
+                height: 30px;
+                font-size: 6px;
+                float: none;
+                margin: 2px;
             }
             div {
-                margin: 100px 10px;
+                margin: 35px 10px;
             }
             div h1 {
                 font-size: small;
@@ -271,24 +282,28 @@ h4 {
                 float: none;
             }
         .left {
-            grid-row: 3;
+            grid-row: 4;
             width: 75%;
             }
         .right {
-            grid-row: 4;
+            grid-row: 5;
             width: 75%;
             }
         main img, .right img {
             width: 75%;
             }
         main {
-            grid-row: 2;
+            grid-row: 3;
             width: 90%;
             }
         footer {
-            grid-row: 5;
+            grid-row: 6;
             font-size: 12pt;
-            text-align: right;
             margin-top: 20px;
+            }
+            .about p {
+                width: 95%;
+                margin: 10px;
+                float: none;
             }
         }
